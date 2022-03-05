@@ -11,7 +11,7 @@ const adminRoutes = require("./routes/admin")
 const connectDB = require("./db/connect");
 require("dotenv").config();
 let cors = require("cors");
-const path = require("path")
+
 
 //middleWare
 app.use(express.json());
@@ -37,19 +37,7 @@ app.use("/user", userRoutes , otpRoutes , subscriberRoute , adminRoutes );
 
 // ....................deployment ....................//
 
- const __dirname1 = path.resolve()
- console.log(__dirname1)
 
- if(process.env.NODE_ENV === "production"){
-app.use( express.static(path.join("../frontend/build")) )
-app.get("*" , (req,res)=>{
-  res.sendFile(path.resolve( "frontend",  "build" , "index.html"))
-})
- }else{
-   app.get("/" , (req,res)=>{
-     res.send("API is runing")
-   })
- }
 
 
 
