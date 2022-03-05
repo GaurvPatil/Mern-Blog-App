@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  --clr-primary-1: #044e53;
+  --clr-primary-2: #0a6c75;
+  --clr-primary-3: #0e7c86;
+  --clr-primary-4: #149199;
+  --clr-primary-5: #2caeba;
+  --clr-primary-6: #37bcc8;
+  --clr-primary-7: #52d1da;
+  --clr-primary-8: #88ebf2;
+  --clr-primary-9: #bff8fd;
+  --clr-primary-10: #e0fcff;
+  --clr-grey-1: #102a42;
+  --clr-grey-3: #324d67;
+  --clr-grey-4: #48647f;
+  --clr-grey-5: #617d98;
+  --clr-grey-8: #bcccdc;
+  --clr-grey-9: #dae2ec;
+  --clr-grey-10: #f1f5f8;
+}
+
+/* just changing font sizes  */
+@media only screen and (max-width: 280px) {
+  * {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  * {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1024) {
+  * {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1201) {
+  * {
+    font-size: 20px;
+  }
+}
+
+
+
+/* common css  */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* main pages,  Rounded Loading css  */
+.sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: sk-chase-dot 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:nth-child(1) {
+  animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2) {
+  animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4) {
+  animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5) {
+  animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6) {
+  animation-delay: -0.6s;
+}
+.sk-chase-dot:nth-child(1):before {
+  animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2):before {
+  animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3):before {
+  animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4):before {
+  animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5):before {
+  animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6):before {
+  animation-delay: -0.6s;
+}
+
+@keyframes sk-chase {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase-dot {
+  80%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4);
+  }
+  100%,
+  0% {
+    transform: scale(1);
+  }
+}
+
+/* inside components, Loading  css   */
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1493f5d6.css",
+    "main.js": "/static/js/main.035959a0.js",
+    "static/media/light.png": "/static/media/light.397e8f141b9d297f6cd1.png",
+    "static/media/banner2.jpg": "/static/media/banner2.19419d69e5001e322fee.jpg",
+    "static/media/dark.png": "/static/media/dark.684da85b8916f1c56614.png",
+    "static/media/404icon.png": "/static/media/404icon.c717cd5cb8eea9806fc2.png",
+    "static/media/aboutimg.png": "/static/media/aboutimg.70d98197a505ea7f1c60.png",
+    "static/media/spritual.jpg": "/static/media/spritual.49e61ccba835cd5f2ae1.jpg",
+    "static/media/navimg.png": "/static/media/navimg.b0309a48b11b1fd646ef.png",
+    "static/media/contactimg.png": "/static/media/contactimg.ab5708a5130858be6c46.png",
+    "static/media/darkcontactimg.png": "/static/media/darkcontactimg.2eb1bd69372fdb5851a3.png",
+    "static/media/fashion.jpg": "/static/media/fashion.2be71c7a5bb73d014b15.jpg",
+    "static/media/aishwarya.png": "/static/media/aishwarya.43d49d8b72c7bee92136.png",
+    "static/media/madiha.png": "/static/media/madiha.8c4dc26fcd628cc2e21c.png",
+    "index.html": "/index.html",
+    "main.1493f5d6.css.map": "/static/css/main.1493f5d6.css.map",
+    "main.035959a0.js.map": "/static/js/main.035959a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1493f5d6.css",
+    "static/js/main.035959a0.js"
+  ]
+}
